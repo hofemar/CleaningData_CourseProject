@@ -18,8 +18,8 @@ This project uses a data set from UCI on [Human Activity Recognition](http://arc
 1. Download the [raw data set](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) and extract it to a directory of your local hard-drive, e.g. c:/coursera/.
 2. Copy run_analysis.R and loadData.R to that directory
 3. Using the example directory you should now have the following two directories:
-3.1 'c:/coursera/' containing both scripts
-3.2 'c:/coursera/UCI HAR Dataset' Cointaining the raw dataset (activity_labels.txt, features.txt, etc.)
+	- 'c:/coursera/' containing both scripts
+	- 'c:/coursera/UCI HAR Dataset' Cointaining the raw dataset (activity_labels.txt, features.txt, etc.)
 4. If you changed the directory name of the raw data set you have to update the data.dir variable in the run_analysis.R accordingly
 5. Open RStudio and set the R working directory to the directory containing the scripts
 6. Run run_analysis.R
