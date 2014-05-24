@@ -13,20 +13,17 @@ IMPORTANT NOTE: For a detailed description of the setup of the experiment and th
 Furthermore each row contains a selected set of feature from the raw data set. Data data type for each feature is numeric. The features come from the accelerometer and gyroscope 3-axial raw signals. The acceleration signal was then separated into body and gravity acceleration signals. Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals. Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm. Finally a Fast Fourier Transform (FFT) was applied to some of these signals to obtain frequency domain signals.
 
 
-| Pattern              | Meaning/Description                                                      |
-|----------------------|--------------------------------------------------------------------------|
-| (time/freq)          | Indicates whether the signal comes from a time domain (=time) or         |
-|                      |   frequency domain (=freq)                                               |
-| .body                | Indicates body signals                                                   |
-| .gravity             | Indicates gravity signlas                                                |
-| .acceleration        | Indicates that the variable comes from the accelerometer                 |
-| .gyro                | Indicates that the variable comes from the gyrometer                     |
-| .jerk                | Indicates Jerk signlas for body linear acceleration and angular velocity |
-| .magnitude           | Indicates that the variable is a magnitude of the three-dimensional      |
-|                      |   signal                                                                 |
-| (mean/std)           | Indicates whether the mean or the standard deviation was estimated for   |
-|                      |   the signals                                                            |
-| (x/y/z)              | Indicates the axis of the 3-axial raw signal                             |
+| Pattern              | Meaning/Description                                                                       |
+|----------------------|-------------------------------------------------------------------------------------------|
+| (time/freq)          | Indicates whether the signal comes from a time domain (=time) or frequency domain (=freq) |
+| .body                | Indicates body signals                                                                    |
+| .gravity             | Indicates gravity signlas                                                                 |
+| .acceleration        | Indicates that the variable comes from the accelerometer                                  |
+| .gyro                | Indicates that the variable comes from the gyrometer                                      |
+| .jerk                | Indicates Jerk signlas for body linear acceleration and angular velocity                  |
+| .magnitude           | Indicates that the variable is a magnitude of the three-dimensional signal                |
+| (mean/std)           | Indicates whether the mean or the standard deviation was estimated for the signals        |
+| (x/y/z)              | Indicates the axis of the 3-axial raw signal                                              |
 
 
 The data set contains variables of the following patterns:
