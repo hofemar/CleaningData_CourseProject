@@ -5,23 +5,19 @@ IMPORTANT NOTE: For a detailed description of the setup of the experiment and th
 
 ### Variable and data description
 
-Each row of the data set contains the following variables.
-| Variable | Type                     | Description                                                    |
-|----------|--------------------------|----------------------------------------------------------------|
-| subject  | integer                  | Subject who performed the activity. Its range is from 1 to 30. |
-| activity | factor w/ 6 Levels       | Activity performed by the subject. The experiments have been   |
-|          |     - WALKING            |   video-recorded to label the activities manually              |
-|          |     - WALKING_UPSTAIRS   |                                                                |
-|          |     - WALKING_DOWNSTAIRS |                                                                |
-|          |     - SITTING            |                                                                |
-|          |     - STANDING, LAYING   |                                                                |
+| Variable | Type               | Description                                                                |
+|----------|--------------------|----------------------------------------------------------------------------|
+| subject  | integer            | Subject who performed the activity. Its range is from 1 to 30.             |
+| activity | factor w/ 6 Levels | Activity performed by the subject. The experiments have been               |
+|          |                    |   video-recorded to label the activities manually. The levels are WALKING, |
+|          |                    |   WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING          |
 
 Furthermore each row contains a selected set of feature from the raw data set. Data data type for each feature is numeric. The features come from the accelerometer and gyroscope 3-axial raw signals. The acceleration signal was then separated into body and gravity acceleration signals. Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals. Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm. Finally a Fast Fourier Transform (FFT) was applied to some of these signals to obtain frequency domain signals.
 
 
 | Pattern              | Meaning/Description                                                      |
 |----------------------|--------------------------------------------------------------------------|
-| (time|freq)          | Indicates whether the signal comes from a time domain (=time) or         |
+| (time/freq)          | Indicates whether the signal comes from a time domain (=time) or         |
 |                      |   frequency domain (=freq)                                               |
 | .body                | Indicates body signals                                                   |
 | .gravity             | Indicates gravity signlas                                                |
@@ -30,9 +26,9 @@ Furthermore each row contains a selected set of feature from the raw data set. D
 | .jerk                | Indicates Jerk signlas for body linear acceleration and angular velocity |
 | .magnitude           | Indicates that the variable is a magnitude of the three-dimensional      |
 |                      |   signal                                                                 |
-| (mean|std)           | Indicates whether the mean or the standard deviation was estimated for   |
+| (mean/std)           | Indicates whether the mean or the standard deviation was estimated for   |
 |                      |   the signals                                                            |
-| (x|y|z)              | Indicates the axis of the 3-axial raw signal                             |
+| (x/y/z)              | Indicates the axis of the 3-axial raw signal                             |
 
 
 The data set contains variables of the following patterns:
